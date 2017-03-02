@@ -50,3 +50,17 @@ before_build:
 build:
   project: src/Cyberkruz.sln
   verbosity: minimal
+
+deploy:
+  - provider: WebDeploy
+    server: https://cyberkruz-aspnet-starterkit-stage.scm.azurewebsites.net:443/msdeploy.axd?site=cyberkruz-aspnet-starterkit__stage
+    website: cyberkruz-aspnet-starterkit__stage
+    username: 
+      secure: WrCSOhp5wdBM0A3QxxdZHhZA2jgFL6MlkPjDFy9jlLd7/gmfQdFUzn8xKJIGrUww
+    password: 
+      secure: bUHMqcyFYrqC12tt/ivdUuuMcJ1Ck4+TlE0eKtqSTucNy0T9uznRN9/9qVdxSOduo1fG+5cKMsYD8+k/FLgCfA==
+    ntlm: false
+    remove_files: true
+    on:
+      branch: master
+    skip_branch_with_pr: true
