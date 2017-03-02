@@ -41,6 +41,11 @@ platform: Any CPU
 # build Configuration, i.e. Debug, Release, etc.
 configuration: Release
 
+before_build:
+  - cmd: cd src
+  - cmd: nuget restore
+  - cmd: cd ..
+
 # build settings themselves
 build:
   project: src/Cyberkruz.sln
