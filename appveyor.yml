@@ -50,6 +50,7 @@ before_build:
 build:
   project: src/Cyberkruz.sln
   verbosity: minimal
+  publish_wap: true
 
 deploy:
   - provider: WebDeploy
