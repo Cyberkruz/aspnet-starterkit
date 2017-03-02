@@ -13,6 +13,8 @@ branches:
 # Do not build on tags (GitHub and BitBucket)
 skip_tags: true
 
+skip_branch_with_pr: true
+
 #---------------------------------#
 #    environment configuration    #
 #---------------------------------#
@@ -64,4 +66,3 @@ deploy:
     remove_files: true
     on:
       branch: master
-    skip_branch_with_pr: true
