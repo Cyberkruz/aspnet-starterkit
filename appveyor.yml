@@ -7,12 +7,11 @@ version: 1.0.{build}
 
 # branches to build
 branches:
-  except:
-    - gh-pages
+  only:
+    master
 
 # Do not build on tags (GitHub and BitBucket)
 skip_tags: true
-
 skip_branch_with_pr: true
 
 #---------------------------------#
