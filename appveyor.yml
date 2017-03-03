@@ -43,6 +43,7 @@ deploy:
     remove_files: true
     on:
       branch: master
+      appveyor_repo_tag: false
   
   - provider: WebDeploy
     server: https://cyberkruz-aspnet-starterkit-prod.scm.azurewebsites.net:443/msdeploy.axd?site=cyberkruz-aspnet-starterkit__prod
@@ -55,4 +56,3 @@ deploy:
     remove_files: true
     on:
       appveyor_repo_tag: true
-      
