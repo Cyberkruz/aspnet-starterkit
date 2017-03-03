@@ -4,7 +4,6 @@ branches:
   except:
     - gh-pages
 
-skip_tags: true
 skip_branch_with_pr: true
 
 image: Visual Studio 2015
