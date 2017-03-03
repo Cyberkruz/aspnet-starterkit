@@ -6,3 +6,4 @@ Template for setting up a new asp.net mvc project. The primary goal is to merge 
 
 * Asp.Net Mvc Web Api - Full api with some goodies for structuring correctly, etc.
 * Unit Testing - Both integration and unit testing examples.
+* Continuous Integration - Implementing full continuous builds with support for incrementing, staging, production deployments with VIP swaps.
