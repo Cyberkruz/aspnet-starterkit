@@ -43,3 +43,16 @@ deploy:
     remove_files: true
     on:
       branch: master
+  
+  - provider: WebDeploy
+    server: https://cyberkruz-aspnet-starterkit-prod.scm.azurewebsites.net:443/msdeploy.axd?site=cyberkruz-aspnet-starterkit__prod
+    website: cyberkruz-aspnet-starterkit__prod
+    username:
+      secure: WrCSOhp5wdBM0A3QxxdZHhc2pucgdMypgVuTa/+/uij2uGiaShTu+UmHEOHbVG0L
+    password:
+      secure: CeJ3IIRrS+p7scPp8nXsOXnu2luLbrlntNNmYrcvQWnZdcmsF4tmELSW2h+i2T507j3BwAQ7KHb5E4X2c6V/ow==
+    ntlm: false
+    remove_files: true
+    on:
+      appveyor_repo_tag: true
+      
